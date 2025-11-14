@@ -2,6 +2,11 @@ package org.yourcompany.calculadora;
 
 import java.util.Scanner;
 
+/**
+ * 
+ * @author Sam Roca Sanchez
+ */
+
 public class Calculadora {
 
     public static void main(String[] args) {
@@ -50,6 +55,9 @@ public class Calculadora {
         
     }
 
+    /**
+     * Llista les opcions de les funcions disponibles
+     */
     public static int mostrarMenuConsola() {
         System.out.println("1. Suma dels primers n números");
         System.out.println("2. Factorial d'un nombre");
@@ -60,7 +68,12 @@ public class Calculadora {
         return 0;
     }
 
-    // Retorna la suma dels primers n números
+    /**
+     * Retorna la suma dels primers n números.
+     * 
+     * @param n Últim número inclós a la suma
+     * @return El resultat de l'operació
+     */
     public static int sumaPrimersNumeros(int n) {
         int resultat=0;
         for (int i = 0; i <= n; i++) {
@@ -69,7 +82,12 @@ public class Calculadora {
         return resultat;
     }
 
-    // Retorna el factorial de n
+    /**
+     * Retorna el factorial de n.
+     * 
+     * @param n Número del qual farem el factorial
+     * @return Resultat de l'operació
+     */
     public static int calcularFactorial(int n) {
         int resultat = 1;
         while (n > 0) {
@@ -79,7 +97,12 @@ public class Calculadora {
         return resultat;
     }
 
-    // Retorna la suma dels quadrats dels primers n números
+    /**
+     * Retorna la suma dels quadrats dels primers n números.
+     * 
+     * @param n Últim número inclós a l'operació
+     * @return Resultat de l'operació
+     */
     public static int sumaQuadrats(int n) {
         int resultat=0;
         for (int i = 0; i <= n; i++) {
@@ -88,7 +111,13 @@ public class Calculadora {
         return resultat;
     }
 
-    // Retorna la potència de n
+    /**
+     * Retorna la potència de n.
+     * 
+     * @param base Número base de la potència
+     * @param exponent Número exponent de la potència
+     * @return Resultat de l'operació
+     */
     public static int calcularPotencia(int base, int exponent) {
         for (int i = 2; i < exponent; i++) {
             base *= base;
@@ -96,7 +125,14 @@ public class Calculadora {
         return base;
     }
 
-    // Retorna el nombre de dígits
+    /**
+     * Calcula el nombre de dígits d'un número enter.
+     * Funciona tant per a nombres positius com negatius.
+     * Si el nombre és 0, retorna 1.
+     * 
+     * @param n Número del qual es vol saber el nombre de dígits
+     * @return Quantitat de dígits que té {@code n}
+     */
     public static int nombreDigits(int n) {
         if (n == 0) {
             return 1; // el 0 té un dígit

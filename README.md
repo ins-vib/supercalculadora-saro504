@@ -85,7 +85,7 @@ Prova cada mètode per separat abans d’integrar-lo al menú principal per asse
 Per generar la documentació del projecte en format HTML per a **tots els paquets**, executa la següent comanda des de l’arrel del projecte:
 
 ```bash
-javadoc -d doc -sourcepath src/main/java -subpackages .
+javadoc -d doc -sourcepath src/main/java -subpackages org.yourcompany.calculadora
 ```
 
 On:
