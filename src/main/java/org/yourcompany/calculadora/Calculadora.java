@@ -21,35 +21,34 @@ public class Calculadora {
             seleccio = teclat.nextInt();
 
             switch (seleccio) {
-                case 1:
+                case 1 -> {
                     System.out.print("Introdueix fins a quin número vols sumar: ");
                     numero = teclat.nextInt();
                     System.out.println(sumaPrimersNumeros(numero));
-                    break;
-                case 2:
+                }
+                case 2 -> {
                     System.out.print("Introdueix el número que factoritzar: ");
                     numero = teclat.nextInt();
                     System.out.println(calcularFactorial(numero));
-                    break;
-                case 3:
+                }
+                case 3 -> {
                     System.out.print("Introdueix fins a quin número vols sumar els quadrats: ");
                     numero = teclat.nextInt();
                     System.out.println(sumaQuadrats(numero));
-                    break;
-                case 4:
+                }
+                case 4 -> {
                     System.out.print("Introdueix la base: ");
                     base = teclat.nextInt();
                     System.out.print("Introdueix el exponent: ");
                     exponent = teclat.nextInt();
                     System.out.println(calcularPotencia(base, exponent));
-                    break;
-                case 5:
+                }
+                case 5 -> {
                     System.out.print("Introdueix el nombre per a contar els digits: ");
                     numero = teclat.nextInt();
                     System.out.println(nombreDigits(numero));
-                    break;
-                default:
-                    System.out.println("Opció no vàlida");
+                }
+                default -> System.out.println("Opció no vàlida");
             }
         }
         
